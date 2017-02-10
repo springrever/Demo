@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.yy.demo.fragments.HomeFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:src="@drawable/yuike_logo"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:id="@+id/search"
+                android:background="#fff"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:src="@drawable/image_search_history"
+                android:textAlignment="inherit"/>
+
+            <ImageButton
+                android:id="@+id/message"
+                android:background="#fff"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/chatx_image_order_un"
+                />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_HomeFragment_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+
+            android:background="#fff"
+            app:tabIndicatorColor="#0f0"
+            app:tabSelectedTextColor="#f00"
+            app:tabTextColor="#222">
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/delivery_more_un"
+            android:background="#fff"/>
+    </LinearLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+
+</LinearLayout>

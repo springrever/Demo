@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yy.demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"/>
+
+       <RadioGroup
+           android:id="@+id/nav_bottom_group"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <RadioButton
+               android:id="@+id/nav_bottom_home"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:button="@null"
+               android:gravity="center"
+               android:text="首页"
+               android:drawableTop="@drawable/nav_bottom_home"
+               />
+
+           <RadioButton
+               android:id="@+id/nav_bottom_sale"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:button="@null"
+               android:gravity="center"
+               android:text="9块9"
+               android:drawableTop="@drawable/nav_bottom_sale"
+               />
+
+           <RadioButton
+               android:id="@+id/nav_bottom_cate"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:button="@null"
+               android:gravity="center"
+               android:text="分类"
+               android:drawableTop="@drawable/nav_bottom_fenlei"
+               />
+           <RadioButton
+               android:id="@+id/nav_bottom_che"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:button="@null"
+               android:gravity="center"
+               android:text="购物车"
+               android:drawableTop="@drawable/nav_bottom_che"
+               />
+           <RadioButton
+               android:id="@+id/nav_bottom_mine"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:button="@null"
+               android:gravity="center"
+               android:text="我的"
+               android:drawableTop="@drawable/nav_bottom_mine"
+               />
+       </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
